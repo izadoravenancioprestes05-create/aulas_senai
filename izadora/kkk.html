@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    *{
+        margin: 0;
+
+    }
+    
+    .navegacao{
+        background-color: rgb(162, 68, 33);
+        padding: 100px;
+        }
+
+    .banner{
+        background-image: url("https://www.magnific.com/br/fotos/fundo");
+        padding: 100px;
+
+    }
+
+    .content-section{
+        background-color: blueviolet;
+        padding: 100px;
+
+    }
+  </style>
+       
+</head>
+<body>
+    <!-- 1. menu em linha-->
+     <ul class="navegacao">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contatos</a></li>
+    </ul>
+    <!-- 2. Banner Principal-->
+     <div class="banner">
+        <h1>Meu Banner de 1440px</h1>
+     </div>
+
+     <!-- 3. Section com os Artigos-->
+      <section class="content-section">
+        <article>
+            <h2>Artigo um</h2>
+            <p>Este é o primeiro artigo. Ele está dividindo o espaço em linha igualmente  com o artigo ao lado usando a  
+            propriedade <strong>flex: 1</strong>. Quando a tela ficar menos que 800px, eles vão empilhar.
+            </p>
+        </article>
+        <h2>Artigo Dois</h2>
+        <p>este é o segundo artigo. o Flexbox no container pai (section) garante que ambos os artigos tenham a mesma altura
+            independentemente do tamanho do conteúdo dentro deles
+        </p>
+      </section>
+</body>
+</html>
