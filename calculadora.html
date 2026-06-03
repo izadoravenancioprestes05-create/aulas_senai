@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        input { margin: 5px; padding: 5px; width: 100px; }
+        button { margin: 5px; padding: 8px 14px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <form action="/calcular" method="POST">
+        <label>Valor 1: <input type="number" name="valor1" required></label><br>
+        <label>Valor 2: <input type="number" name="valor2" required></label><br><br>
+
+        <button type="submit" name="operacao" value="soma">Adição</button>
+        <button type="submit" name="operacao" value="subtracao">Subtração</button>
+        <button type="submit" name="operacao" value="multiplicacao">Multiplicação</button>
+        <button type="submit" name="operacao" value="divisao">Divisão</button>
+    </form>
+
+</body>
+</html>
